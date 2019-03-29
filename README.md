@@ -1,145 +1,184 @@
 # 各种各样的PyQt测试和例子
 
-# [博客](https://pyqt5.com)
+[![Blog](https://img.shields.io/badge/blog-pyqt5-green.svg)](https://pyqt5.com)
 
-### [Python.4 or Python][PyQt5]
+https://pyqt5.com 社区是专门针对PyQt5学习和提升开设的博客网站，分享大家平时学习中记录的笔记和例子，以及对遇到的问题进行收集整理。
 
-### I、 项目型
-[Qt皮肤生成器 - 持续更新中](https://github.com/892768447/QtSkin)
+[客户端下载](https://github.com/PyQt5/PyQtClient/releases)
 
-[客户端动画界面](https://github.com/892768447/PyQtClient)
+## 目录
 
-[桌面悬浮异形窗体](https://github.com/892768447/Lolita)
+- Layouts
+  - [QVBoxLayout](QVBoxLayout)
+  - [QHBoxLayout](QHBoxLayout)
+  - [QGridLayout](QGridLayout)
+    - [腾讯视频热播列表](QGridLayout/HotPlaylist.py)
+  - [QFormLayout](QFormLayout)
+  - [QFlowLayout](QFlowLayout)
+    - [腾讯视频热播列表](QFlowLayout/HotPlaylist.py)
 
-[必应壁纸](https://github.com/892768447/BingWallpaper)
+- Spacers
+  - [Horizontal Spacer](QSpacerItem)
+  - [Vertical Spacer](QSpacerItem)
 
-[腾讯视频热播列表](腾讯视频热播列表/)
+- Buttons
+  - [QPushButton](QPushButton)
+    - [普通样式](QPushButton/NormalStyle.py)
+    - [按钮底部线条进度](QPushButton/BottomLineProgress.py)
+    - [按钮文字旋转进度](QPushButton/FontRotate.py)
+  - [QToolButton](QToolButton)
+  - [QRadioButton](QRadioButton)
+  - [QCheckBox](QCheckBox)
 
-[ QWebView 与 python 通过js交互 特效 - QWebEngine需要改代码](https://github.com/892768447/PhotoEffects)
+- Item Views
+  - [QListView](QListView)
+    - [显示自定义Widget](QListView/CustomWidgetItem.py)
+    - [显示自定义Widget并排序](QListView/CustomWidgetSortItem.py)
+    - [自定义角色排序](QListView/SortItemByRole.py)
+  - [QTreeView](QTreeView)
+  - [QTableView](QTableView)
+    - [表格内容复制](QTableView/CopyContent.py)
+  - [QColumnView](QColumnView)
+  - [QUndoView](QUndoView)
 
-### II、功能型
+- Item Widgets
+  - [QListWidget](QListWidget)
+    - [删除自定义Item](QListWidget/DeleteCustomItem.py)
+    - [自定义可拖拽Item](QListWidget/DragDrop.py)
+    - [腾讯视频热播列表](QListWidget/HotPlaylist.py)
+  - [QTreeWidget](QTreeWidget)
+    - [通过json数据生成树形结构](QTreeWidget/ParsingJson.py)
+  - [QTableWidget](QTableWidget)
+    - [Sqlalchemy动态拼接字段查询显示表格](QTableWidget/SqlQuery.py)
 
-#### 2.1 常用例子
+- Containers
+  - [QGroupBox](QGroupBox)
+  - [QScrollArea](QScrollArea)
+    - [仿QQ设置面板](QScrollArea/QQSettingPanel.py)
+  - [QToolBox](QToolBox)
+  - [QTabWidget](QTabWidget)
+  - [QStackedWidget](QStackedWidget)
+    - [左侧选项卡](QStackedWidget/LeftTabStacked.py)
+  - [QFrame](QFrame)
+  - [QWidget](QWidget)
+    - [样式表测试](QWidget/WidgetStyle.py)
+  - [QMdiArea](QMdiArea)
+  - [QDockWidget](QDockWidget)
 
-1.  - [ 自定义属性测试](自定义属性测试/)
-1.  - [ 自动更新](自动更新/)
-1.  - [ 自定义import](自定义import/)
-1.  - [ 全局热键](全局热键/)
-1.  - [ 单实例应用 - 只允许运行一个程序](单实例应用/)
-1.  - [ 程序重启](程序重启/)
-1.  - [ 窗口重启](窗口重启/)
-1.  -   python 的exec( ) 动态生成控件
-        - [1. 动态控件基础例子 - 动态生成按钮](partner_625781186/1.exec动态生成控件/dynamic_button)
-        - [2. 动态控件基础例子 - 动态生成菜单](partner_625781186/1.exec动态生成控件/dynamic_Menu)
-        - [3. 配合setting记录模型类型](partner_625781186/13.combo_listwidget)
+- Input Widgets
+  - [QComboBox](QComboBox)
+    - [下拉数据关联](QComboBox/CityLinkage.py)
+  - [QFontComboBox](QFontComboBox)
+  - [QLineEdit](QLineEdit)
+  - [QTextEdit](QTextEdit)
+    - [文本查找高亮](QTextEdit/HighlightText.py)
+  - [QPlainTextEdit](QPlainTextEdit)
+  - [QSpinBox](QSpinBox)
+  - [QDoubleSpinBox](QDoubleSpinBox)
+  - [QTimeEdit](QTimeEdit)
+  - [QDateTime](QDateTime)
+  - [QDial](QDial)
+  - [QScrollBar](QScrollBar)
+    - [滚动条样式美化](QScrollBar/StyleScrollBar.py)
+  - [QSlider](QSlider)
+    - [滑动条点击定位](QSlider/ClickJumpSlider.py)
+    - [双层圆环样式](QSlider/QssQSlider.py)
 
-- 小部件
- 
-    1. - [ ☆！ QSplitter 分割条重写 来添加按钮](分割窗口的分割条重写/)
-    1. - [ QLabel 图片加载 gif动画](图片加载/)
-    1. - [ ComboBox 下拉选择级联--省、市、县 json 数据 ](下拉选择联动/)
-    1. - [ ComboBox 自定义下拉 listitem ](partner_625781186/13.combo_listwidget/)
-    1. - [ 仿QQ设置面板](仿QQ设置面板/)
-    1. - [ 右下角弹出框](右下角弹出框/)
-    1. - [ 消息对话框倒计时关闭](消息对话框倒计时关闭/)
-    1. - [ QTextEdit 文本高亮](文本高亮/)
-    1. - [ QActiveX窗口 加载本地word/pdf](ActiveX窗口/)
-    
- - win 32
- 
-    1. - [ 线程的挂起与恢复](多线程使用/)
-    1. - [ 嵌入外部窗口](嵌入外部窗口/)
-    1. - [ 截图dll (只能用32位python)](调用截图dll(只能用32位)/)
-    1. - [ 探测窗口 和 放大镜](探测窗口和放大截图/) 
+- Display Widgets
+  - [QLabel](QLabel)
+    - [图片加载显示](QLabel/ShowImage.py)
+    - [图片旋转](QLabel/ImageRotate.py)
+    - [仿网页图片错位显示](QLabel/ImageSlipped.py)
+    - [显示.9格式图片（气泡）](QLabel/NinePatch.py)
+    - [圆形图片](QLabel/CircleImage.py)
+  - [QTextBrowser](QTextBrowser)
+  - [QGraphicsView](QGraphicsView)
+    - [绘制世界地图](QGraphicsView/WorldMap.py)
+    - [添加QWidget](QGraphicsView/AddQWidget.py)
+  - [QCalendarWidget](QCalendarWidget)
+    - [QSS美化日历样式](QCalendarWidget/CalendarQssStyle.py)
+  - [QLCDNumber](QLCDNumber)
+  - [QProgressBar](QProgressBar)
+    - [常规样式美化](QProgressBar/SimpleStyle.py)
+    - [圆圈进度条](QProgressBar/RoundProgressBar.py)
+    - [百分比进度条](QProgressBar/PercentProgressBar.py)
+    - [Metro进度条](QProgressBar/MetroCircleProgress.py)
+    - [水波纹进度条](QProgressBar/WaterProgressBar.py)
+  - [QOpenGLWidget](QOpenGLWidget)
+  - [QWebView](QWebView)
+    - [梦幻树](QWebView/DreamTree.py)
+    - [获取Cookie](QWebView/GetCookie.py)
+  - [QWebEngineView](QWebEngineView)
+    - [获取Cookie](QWebEngineView/GetCookie.py)
 
- - Model & View
- 
-    1. - [ QListView 加按钮和 排序](QListView/)
-    1. - [ QListWidget 自定义Item并拖拽](QListWidget自定义Item并拖拽/)
-    
-    1. - [ Json生成QTreeWidget](Json生成QTreeWidget/)
-    1. - [ treeWidget 节点可拖拽](https://github.com/AshotS/glowing-disco)
-    1. - [ treeWidget 支持拖拽 并改变图标样式](partner_625781186/12.1拖拽显示为图片/)
-    
-    1. - [ QTabWidget 左侧标签 正字方法](左侧选项卡/)
-    1. - [ QTabWidget 表格复制 与 黏贴](表格复制/)
-    1. - [ QSqlTableModel + QTableView 数据库查询显示表格](数据库查询显示表格/)   
+- [QThread](QThread)
+  - [继承QThread](QThread/InheritQThread.py)
+  - [moveToThread](QThread/moveToThread.py)
+  - [线程挂起恢复](QThread/SuspendThread.py)
+  - [线程休眠唤醒](QThread/WakeupThread.py)
 
- -  浏览器QWebEngine模块例子
- 
-    1. - [ 浏览器获取Cookie](浏览器获取Cookie/)
-    1. - [ 浏览器下载功能](partner_625781186/6.QWebEngineView下载文件)
-    1. - [ 浏览器开启调试工具](partner_625781186/14.多进程爬虫)
+- [QtQuick](QtQuick)
+  - [Flat样式](QtQuick/FlatStyle.py)
 
-    1. - [ 梦幻树 QWebView - QWebEngine需要改代码](梦幻树/)
-    1. - [ QWebView 与 python 通过js交互 特效 - QWebEngine需要改代码](https://github.com/892768447/PhotoEffects)
-    
+- [QChart](QChart)
+  - [折线图](QChart/LineChart.py)
+  - [折线堆叠图](QChart/LineStack.py)
+  - [柱状堆叠图](QChart/BarStack.py)
+  - [LineChart自定义xy轴](QChart/CustomXYaxis.py)
+  - [ToolTip提示](QChart/ToolTip.py)
 
-#### 2.2 框架
-1. - [ 无边框自定义标题栏窗口](无边框自定义标题栏窗口/)
-1. - [ 简单的窗口贴边隐藏](简单的窗口贴边隐藏/)
-1. - [ 验证码控件](验证码控件/)
-1. - [ 消息提示](消息提示/)
-1. -  悬浮下拉菜单
-       - [ tableWidget形式](partner_625781186/5.hoverMenu)
-    
-#### 2.3 其他案例
-- [ 人脸描点检测](人脸描点检测/)
-- [ 网络操作](网络操作/)    
-- [ QRC资源文件使用](QRC资源文件使用/)
-- [ C和C++扩展](C和C++扩展/)
-    - [.1 pyx和c++](C和C++扩展/pyx和c++/)
-    - [.2 py转pyd](C和C++扩展/py转pyd/)
-    - [.3 pydext](C和C++扩展/pydext/)    
+- [Animation](QPropertyAnimation)
+  - [窗口淡入淡出](QPropertyAnimation/FadeInOut.py)
+  - [右键菜单动画](QPropertyAnimation/MenuAnimation.py)
+  - [点阵特效](QPropertyAnimation/RlatticeEffect.py)
+  - [页面切换/图片轮播动画](QPropertyAnimation/PageSwitching.py)
 
-### III、 界面型
+- Others
+  - [QFont](QFont)
+    - [加载自定义字体](QFont/AwesomeFont.py)
+  - [QMenu](QMenu)
+    - [菜单设置多选并且不关闭](QMenu/MultiSelect.py)
+  - [QAxWidget](QAxWidget)
+    - [显示Word、Excel、PDF文件](QAxWidget/ViewOffice.py)
+  - [QSplitter](QSplitter)
+    - [分割窗口的分割条重绘](QSplitter/RewriteHandle.py)
+  - [QSerialPort](QSerialPort)
+    - [串口调试小助手](QSerialPort/SerialDebugAssistant.py)
+  - [QProxyStyle](QProxyStyle)
+    - [Tab文字方向](QProxyStyle/TabTextDirection.py)
+  - [QMessageBox](QMessageBox)
+    - [消息对话框倒计时关闭](QMessageBox/CountDownClose.py)
+    - [自定义图标等](QMessageBox/CustomColorIcon.py)
+  - [QFileSystemModel](QFileSystemModel)
+    - [自定义图标](QFileSystemModel/CustomIcon.py)
+  - [QGraphicsDropShadowEffect](QGraphicsDropShadowEffect)
+    - [边框阴影动画](QGraphicsDropShadowEffect/ShadowEffect.py)
 
-#### 3.1 [美化类](界面美化/)
-1. - [ 字体测试](字体测试/)
-1. - [ 自定义QWidget的QSS样式](自定义QWidget的QSS样式/)
-1. - [ QSS美化例子](界面美化/QSS美化例子)
-1. - [ Flat Style](https://github.com/892768447/QFlat)
-1. - [ QMessageBox样式](界面美化/QMessageBox样式)
-1. - [ QScrollBar滚动条样式](界面美化/QScrollBar滚动条样式)
-1. - [ QLabel圆形头像](界面美化/QLabel圆形头像)
-1. - [ QFileSystemModel图标](界面美化/QFileSystemModel图标)
-1. - [ QPushButton进度动画](界面美化/QPushButton进度动画)
-1. - [ QSlider美化](界面美化/QSlider美化)
-1. - [ 各类进度条](界面美化/各类进度条)
-1. - [ 动态边框阴影动画](界面美化/边框动画阴影)
+- [Demo](Demo)
+  - [重启窗口Widget](Demo/RestartWindow.py)
+  - [简单的窗口贴边隐藏](Demo/WeltHideWindow.py)
+  - [嵌入外部窗口](Demo/EmbedWindow.py)
+  - [简单跟随其它窗口](Demo/FollowWindow.py)
+  - [简单探测窗口和放大截图](Demo/ProbeWindow.py)
+  - [无边框自定义标题栏窗口](Demo/FramelessWindow.py)
+  - [右下角弹出框](Demo/WindowNotify.py)
+  - [程序重启](Demo/AutoRestart.py)
+  - [自定义属性](Demo/CustomProperties.py)
+  - [调用截图DLL](Demo/ScreenShotDll.py)
+  - [单实例应用](Demo/SingleApplication.py)
+  - [简单的右下角气泡提示](Demo/BubbleTips.py)
+  - [右侧消息通知栏](Demo/Notification.py)
+  - [验证码控件](Demo/VerificationCode.py)
+  - [人脸特征点](Demo/FacePoints.py)
+  - [使用Threading](Demo/QtThreading.py)
+  - [背景连线动画](Demo/CircleLine.py)
 
-#### 3.2 [动画类](动画特效/)
-1. - [ 气泡提示 上升渐隐](消息提示/)
-1. - [ 折叠动画效果](partner_625781186/2.折叠控件/)
-1. - [ 淡入淡出](动画特效/)
-1. - [ 右键菜单动画](动画特效/)
-1. - [ 水波纹进度条](界面美化/水波纹进度条)
-
-### IV、图表型
-#### 4.1 [ QGraphicsView练习](QGraphicsView练习/)
- - [ 世界地图](QGraphicsView练习/世界地图)
- - [ 添加QWidget](QGraphicsView练习/添加QWidget.py)
- - [ QChartToolTipTest](QGraphicsView练习/QChartToolTipTest.py)
-    
-#### 4.2 [ PyQtChart练习](PyQtChart练习/)
- - [ charts](PyQtChart练习/charts)
- - [ test](PyQtChart练习/test)
-
-
-### V、[QML](partner_625781186/QML_QtQuick_PY)
-- [python_QML调用基础](partner_625781186/QML_QtQuick_PY/python_QML调用基础)
-- QWidget窗体中嵌入qml界面
-    - [QDialog中嵌入qml窗体并缩放](partner_625781186/QML_QtQuick_PY/QDialog中嵌入qml窗体并缩放)
-    - [QQmlApplicationEngine之qml嵌入qtwidget_qt以上](partner_625781186/QML_QtQuick_PY/QQmlApplicationEngine之qml嵌入qtwidget_qt以上)
- 
- 
 # QQ群
- - [PyQt & PySide](https://jq.qq.com/?_wv=1027&k=50LWvn9)
- - [PyQt学习互助](https://jq.qq.com/?_wv=1027&k=5QVVEdF)
- - [PyQt5小组](https://jq.qq.com/?_wv=1027&k=5cI3oRz)
+
+[PyQt 学习](https://jq.qq.com/?_wv=1027&k=5QVVEdF)
 
 
-# [Donate-打赏](Donate/)
+# [Donate-打赏](Donate)
+<a href="javascript:;" alt="微信"><img src="Donate/weixin.png" height="350" width="350"></a>or<a href="javascript:;" alt="支付宝"><img src="Donate/zhifubao.png" height="350" width="350"></a>
 
-# Wiki
- - [一些Qt写的三方APP](https://github.com/892768447/PyQt/wiki/3rd-party-applications)
+[一些Qt写的三方APP](https://github.com/892768447/PyQt/wiki/3rd-party-applications)
